@@ -9,4 +9,7 @@ class Account(Person):
         self.password = password
     
     def get_info(self):
-        return 'Баланс: ' + self.balance 
+        return 'Баланс: ' + str(self.balance) + ' руб. '
+    
+    def __str__(self):
+        return 'Клиент "' + Person.__str__(self) + '". ' + self.get_info()
