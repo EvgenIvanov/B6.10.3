@@ -1,5 +1,4 @@
-# from .person 
-from person import Person
+from classes.person import Person
 
 class Account(Person):
 
